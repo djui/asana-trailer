@@ -18,10 +18,11 @@
     #4FE7E7 #4F56BB
 */
 
-// import AnimationEngine from 'AnimationEngine'
+// import Renderer from 'Renderer'
 // import Scene from 'Scene'
 
-() => {
+window.onload = init
+function init() {
     let scene = new Scene("#scene")
     let renderHandler = (frame) => {
         scene.render(frame)
@@ -29,4 +30,4 @@
     let renderer = new Renderer(renderHandler)
     renderer.run()
     renderer.stopAfter(1000)
-}()
+}

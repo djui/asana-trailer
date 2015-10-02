@@ -18,16 +18,15 @@
     #4FE7E7 #4F56BB
 */
 
-// import Renderer from 'Renderer'
-// import Scene from 'Scene'
-
 window.onload = init
 function init() {
-    let scene = new Scene("#scene")
-    let renderHandler = (frame) => {
-        scene.render(frame)
-    }
-    let renderer = new Renderer(renderHandler)
-    renderer.run()
-    renderer.stopAfter(1000)
+    var s = Snap("#canvas")
+    console.log(s);
+    let bigCircle = s.circle(150, 150, 100)
+    bigCircle.attr({
+        fill: "#bada55",
+        stroke: "#000",
+        strokeWidth: 5
+    })
+    let smallCircle = s.circle(100, 150, 70)
 }

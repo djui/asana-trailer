@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if ! hash fswatch 2>/dev/null; then
+    echo "brew install fswatch"
+    exit 1
+fi
+
+fswatch -o -r *.es | xargs -n1 -I{} sh -c "clear && printf '\e[3J' ; make && open index.html"

@@ -1,2 +1,2 @@
 all:
-	babel -o main.js main.es
+	babel -o app.js *.es

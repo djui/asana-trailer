@@ -20,8 +20,7 @@
 
 window.onload = init
 function init() {
-    var s = Snap("#canvas")
-    console.log(s);
+    let s = Snap("#canvas")
     let bigCircle = s.circle(150, 150, 100)
     bigCircle.attr({
         fill: "#bada55",
@@ -29,4 +28,5 @@ function init() {
         strokeWidth: 5
     })
     let smallCircle = s.circle(100, 150, 70)
+    smallCircle.animate({r: 50}, 1000)
 }

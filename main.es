@@ -30,7 +30,7 @@ window.onload = function () {
             fill: backgroundGradient1
         })
 
-    let circle1Path = s.path('m301.5,353.5c46,-19 460,-218 27,-267')
+    let circle1Path = s.path('m300,350 c50,-20 450,-200 25,-250')
         .attr({fill: 'none'})
 
     let circle1 = s.circle(600, 450, 20)
